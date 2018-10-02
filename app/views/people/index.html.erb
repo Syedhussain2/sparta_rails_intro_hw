@@ -11,11 +11,13 @@
 
   <tbody>
     <% @people.each do |person| %>
-      <tr>
-        <td><%= link_to 'Show', person %></td>
-        <td><%= link_to 'Edit', edit_person_path(person) %></td>
-        <td><%= link_to 'Destroy', person, method: :delete, data: { confirm: 'Are you sure?' } %></td>
-      </tr>
+      <h3><%= person.name %></h3>
+      <h3><%= person.age %></h3>
+      <h3><%= person.gender %></h3>
+      <h4><%= link_to 'Show', person %></h4>
+      <h4><%= link_to 'Edit', edit_person_path(person) %></h4>
+      <h4><%= link_to 'Destroy', person, method: :delete, data: { confirm: 'Are you sure?' } %></h4>
+
     <% end %>
   </tbody>
 </table>
