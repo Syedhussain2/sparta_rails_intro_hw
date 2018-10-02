@@ -1,4 +1,6 @@
 <p id="notice"><%= notice %></p>
-
+<h3><%= @person.name %></h3>
+<h3><%= @person.age %></h3>
+<h3><%= @person.gender %></h3>
 <%= link_to 'Edit', edit_person_path(@person) %> |
 <%= link_to 'Back', people_path %>
